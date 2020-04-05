@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TemplateController">
+   <children>
+      <ComboBox layoutX="25.0" layoutY="27.0" prefWidth="150.0" value="Template 1" fx:id="cboTemplates" onAction="#changeTemplateName"/>
+      <Button layoutX="528.0" layoutY="27.0" mnemonicParsing="false" text="To Calendar Menu" onMouseClicked="#toCalendar"/>
+      <Label layoutX="33.0" layoutY="94.0" text="Client First Name:" />
+      <Label layoutX="257.0" layoutY="94.0" text="Home Address Line 1:" />
+      <Label layoutX="257.0" layoutY="157.0" text="Home Address Line 2: (Optional)" />
+      <Label layoutX="33.0" layoutY="219.0" text="Client Phone Number:" />
+      <Label layoutX="33.0" layoutY="277.0" text="Client Email Address:" />
+      <Label layoutX="362.0" layoutY="277.0" text="City:" />
+      <Label layoutX="408.0" layoutY="219.0" text="State:" />
+      <Label layoutX="251.0" layoutY="277.0" text="Zip Code:" />
+      <Label layoutX="506.0" layoutY="94.0" text="Date of Inspection:" />
+      <Label layoutX="506.0" layoutY="157.0" text="Time of Inspection:" />
+      <Label layoutX="251.0" layoutY="219.0" text="Year of Construction:" />
+      <Label layoutX="289.0" layoutY="22.0" text="Template 1" textAlignment="CENTER" underline="true" fx:id="templateName">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="25.0" layoutY="119.0" />
+      <TextField layoutX="27.0" layoutY="243.0" promptText="(XXX) XXX-XXXX" />
+      <TextField layoutX="25.0" layoutY="302.0" promptText="aaa@bbb.ccc" />
+      <TextField layoutX="241.0" layoutY="119.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="241.0" layoutY="185.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="241.0" layoutY="243.0" prefHeight="25.0" prefWidth="138.0" promptText="1234" />
+      <TextField layoutX="400.0" layoutY="243.0" prefHeight="25.0" prefWidth="51.0" promptText="AA" />
+      <TextField layoutX="242.0" layoutY="302.0" prefHeight="25.0" prefWidth="79.0" />
+      <TextField layoutX="342.0" layoutY="302.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextField layoutX="27.0" layoutY="185.0" />
+      <Label layoutX="33.0" layoutY="157.0" prefWidth="111.0" text="Client Last Name:" />
+      <TextField layoutX="493.0" layoutY="119.0" promptText="MM/DD/YYYY" />
+      <TextField layoutX="493.0" layoutY="185.0" prefHeight="25.0" prefWidth="70.0" promptText="12:00" />
+      <TextField layoutX="585.0" layoutY="185.0" prefHeight="25.0" prefWidth="57.0" promptText="AM/PM" />
+      <Label layoutX="122.0" layoutY="382.0" text="Payment Information:" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="418.0" text="Card Number:" />
+      <Label layoutX="70.0" layoutY="481.0" text="Name on Card:" />
+      <Label layoutX="220.0" layoutY="418.0" text="CVC:" />
+      <Label layoutX="220.0" layoutY="481.0" text="Expiration Date:" />
+      <TextField layoutX="55.0" layoutY="443.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="214.0" layoutY="443.0" prefHeight="25.0" prefWidth="101.0" promptText="123" />
+      <TextField layoutX="55.0" layoutY="506.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="214.0" layoutY="506.0" prefHeight="25.0" prefWidth="101.0" promptText="MM/YY" />
+      <Button layoutX="396.0" layoutY="373.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="233.0" text="Save Client Info">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="396.0" layoutY="471.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="233.0" text="Export to Calendar">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="396.0" layoutY="563.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="233.0" text="Generate PDF File">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
